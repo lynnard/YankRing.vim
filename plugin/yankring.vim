@@ -1660,7 +1660,7 @@ function! s:YRMapsMacro(bang, ...)
         return ""
     endif
 
-    if zapto !~ '\(\w\|@\)'
+    if zapto !~ '\(\w\|@\|:\)'
         " Abort if the user does not specify a register
         call s:YRWarningMsg( "YR:No register specified, aborting macro" )
         return ""
